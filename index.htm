@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>LavAuto</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/retro-car-icon-label-by-Vexels.png" width="70" height="70" class="d-inline-block align-center" alt="">RetroCar</a>
+    </nav>
+    <div>
+        <div class="container">
+            <form id="formulario" action="#">
+                <div class="text-1" id="title"> Registro de Cliente </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputRut">Rut</label>
+                        <input class="form-control" name="rut" id="rut" type="text" placeholder="11111111-1" maxlength="11" max="11" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputName">Nombre</label>
+                        <input type="text" name="user" class="form-control" maxlength="50" id="name" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputLastName">Apellido</label>
+                        <input type="text" class="form-control" maxlength="50" id="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputAddress">Dirección</label>
+                        <input type="text" class="form-control" maxlength="100" id="inputAddress" placeholder="" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputService">Encargado</label>
+                        <select id="inputService" class="form-control" required>
+              <option selected>Trabajador</option>
+              <option>Juan Perez</option>
+              <option>María Canales</option>
+              <option>Luis Marcel</option>
+            </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-2">
+                        <input type="date" id="fecha" pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" class="form-control" required>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <input type="time" id="hora" class="form-control" required>
+                    </div>
+                </div>
+                <div class="text-1" id="title"> Datos vehículo </div>
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <label for="validationDefault04">Tipo vehículo</label>
+                        <select class="custom-select" id="validationDefault04" required>
+                      <option selected disabled value="">Tipo</option>
+                      <option>Furgon</option>
+                      <option>Automovil</option>
+                      <option>Camion</option>
+                      <option>Camioneta</option>
+                      <option>Moto</option>
+                    </select>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <label for="validationDefault01">Marca</label>
+                        <input type="text" class="form-control" id="marca" required>
+                    </div>
+                    <div class="col-md-2 mb-3">
+                        <label for="validationDefault02">Modelo</label>
+                        <input type="text" class="form-control" id="model" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-2 mb-3">
+                        <label for="validationDefault03">Año</label>
+                        <input type="text" class="form-control" id="years" required>
+                    </div>
+                </div>
+                <div class="text"> Revisión técnica
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="revision" id="revisionSi" value="Si">
+                        <label class="form-check-label" for="revisionSi">
+                  Si 
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="revision" id="revisionNo" value="No">
+                        <label class="form-check-label" for="revisionNo">
+                  No
+                </label>
+                    </div>
+                </div>
+                <div class="text" id="title"> Servicio
+                    <div class="form-check" required>
+                        <input class="form-check-input" onclick="(this.ckecked,this.value)" name="checkbox" type="checkbox" value="7000" id="Lavado Auto">
+                        <label class="form-check-label" for="defaultCheck1">
+                  Lavado Interior y exterior : $7000 neto
+                </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" onclick="(this.ckecked,this.value)" name="checkbox" type="checkbox" value="15000" id="Lavado Motor">
+                        <label class="form-check-label" for="defaultCheck2"> Lavado Motor: $15000  neto</label>
+                    </div>
+                </div>
+                <button type="submit" id="boton" class=" btn btn-primary ">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer id="footer " class="page-footer unique-color-light ">
+        <div class="container " id="sec3 ">
+
+
+            <div class="row py-4 d-flex align-items-center ">
+
+
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 text-light ">
+                    <h4 class="mb-0 ">RetroCar Servicio de lavado de auto</h4>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <script src="assets/javascript/script.js "></script>
+    <script type="text/javascript " src="assets/javascript/jquery-3.6.0.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js " integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js " integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js " integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin=" anonymous "></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js "></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+</body>
+
+
+</html>

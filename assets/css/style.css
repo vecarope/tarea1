@@ -1,0 +1,32 @@
+body {
+    color: black;
+}
+
+nav,
+footer {
+    background-color: rgb(255, 159, 69);
+    color: whitesmoke;
+}
+
+.navbar-brand {
+    font-size: 30px
+}
+
+input {
+    background-color: rgb(164, 180, 148);
+}
+
+#boton {
+    background-color: rgb(164, 180, 148);
+    border: rgb(56, 41, 51);
+    margin: 10px 0px 10px 0px;
+}
+
+.container {
+    padding: 30px 30px 30px 30px;
+}
+
+.text-1 {
+    font-size: x-large;
+    color: rgb(252, 79, 79);
+}
